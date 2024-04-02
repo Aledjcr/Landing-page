@@ -3,20 +3,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box; /* Esto mantiene el ancho y alto a pesar de padding y border*/
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Aldrich', monospace;
     list-style: none; /* Quitar los puntos e decoración de las listas */
     text-decoration: none; /* Esto quita el subrayado de los enlaces */
-    color: white;
+    color: wheat ;
 }
 
 body{
-    background-color: black; /* TODO: borrar cuando tengamos el fondo final */
+    background-color: 3F4957; /* TODO: borrar cuando tengamos el fondo final */
 }
 
 header {
     position: fixed; /* Esto hace que el haader se quede fijo en la parte superior */
-    right: 0;
-    top: 0;
+    right: 0;   
+    top: 10px;
     z-index: 100; /* Esto hace que el header se muestre por encima*/
     width: 100%;
     display: flex; /* Esto hará que los elementos se pongan en linea */
@@ -27,24 +27,46 @@ header {
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 800; /* este es el grueso de las letras */
 }
 
+
 .navlist {
-    display: flex; /* Esto sirve para que los elementos de la lista UL se pongan en linea*/
+    width: inherit;
+    display: inline-flex;
+    justify-content: space-between;
 }
 
-.navlist a {
-    margin-left: 60px; /* es para separar las palabras */
+.navlist ul {
+    display: inline-flex; /* Esto sirve para que los elementos de la lista UL se pongan en linea*/
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+
+
+
+.login {
+    padding: 30px;
+    color: black;
+}
+
+.navlistt{
+    justify-content: start;
+}
+
+.navlist ul li  {
+    /* margin-left: 60px; es para separar las palabras */
+    margin-inline: 10px;
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent; /* este es un subrayado transparente */
-    transition: all .5s ease; /* esto es para animar todas las caracteristicas del .navlist a */
+    transition: all .6s ease; /* esto es para animar todas las caracteristicas del .navlist a */
 }
 
 .navlist a:hover {
-    border-bottom: 2px solid white; /* este es un subrayado blanco que aparecerá cuando hacemos estamos encima con el mouse */
+    border-bottom: 1px double white; /* este es un subrayado blanco que aparecerá cuando hacemos estamos encima con el mouse */
 }
 
  #menu-icon{
@@ -69,35 +91,38 @@ header {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%); /* fondo de color gradiente */
+    background: linear-gradient(245.59deg, #5e9eab 0%, #49b9cf 25%, #1623ac 75%); /* fondo de color gradiente */
     position: relative; /* Para que sea relativo al contenedor (nos permite usar top, bottom, left y right) */
     display: grid; /* Para que el hero se pueda dividir en dos columnas */
     grid-template-columns: 1fr 1fr; /* las 2 columnas */
-    align-items: center; /* para alinear verticalmente el hero */
-    gap: 2rem; /* haya espacio de 2 rem entre las dos columnas */
+    align-items:center; /* para alinear verticalmente el hero */
+    /* gap: 2rem; haya espacio de 2 rem entre las dos columnas */
 }
 
 section{
-    padding: 0 8%;
+    padding: 0 5%;
 }
 
 .hero-text h5 {
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 400;
     margin-bottom: 25px;
 }
 
 .hero-text h1 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 50px;
+    font-family: 'Aldrich', monospace;
+    font-size: 60px;
     line-height: 1;
     margin: 0 0 30px;
+    f
 }
+
 
 .hero-text h4 {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 
 .hero-text p {
@@ -107,20 +132,21 @@ section{
 }
 
 .hero-img img{
-    width: 400px;
-    margin: 10% 0 0 10%;
+    width: 250px;
+    margin: 10% 0 0 20%;
     height: auto;
-    transition: all 5s linear; /* esto hace que la transición sea lineal */
+    transition-duration: 300ms;
+    /* transition: all 5s linear ; esto hace que la transición sea lineal */
 }
 
 .hero-img img:hover {
-    width: 450px;
-    opacity: 0.6;
+    width: 350px;
+    opacity: 0.8;
 }
 
 .hero-text a {
     display: inline-block;
-    background-color: #4d4d4d;
+    background-color: #1520f1;
     border: 1px solid transparent;
     padding: 15px 30px;
     line-height: 1.4;
@@ -134,7 +160,8 @@ section{
 .hero-text a:hover {
     background-color: transparent;
     border: 1px solid white;
-    transform: translateX(8px);
+    transform: translateX(10px);
+    transition: background-color 
 }
 
 .hero-text a.videos{
@@ -238,6 +265,12 @@ section{
 
     .hero-img img {
         margin: 0;
+        width: 40%;
+    }
+
+    .hero-img:hover img {
+        margin: 0;
+        width:45% ;
     }
 
     .hero {
