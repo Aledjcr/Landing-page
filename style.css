@@ -46,15 +46,16 @@ header {
 
 
 
+.navlistt{
+    justify-content: start;
+}
 
 .login {
+    font-size: 10px;
     padding: 30px;
     color: black;
 }
 
-.navlistt{
-    justify-content: start;
-}
 
 .navlist ul li  {
     /* margin-left: 60px; es para separar las palabras */
@@ -114,7 +115,6 @@ section{
     font-size: 60px;
     line-height: 1;
     margin: 0 0 30px;
-    f
 }
 
 
@@ -301,6 +301,4 @@ section{
     #menu-toggle:checked + label.menu-icon-action + ul{
         right: 0;
     }
-
-
 }
