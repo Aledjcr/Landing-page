@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: 3F4957; /* TODO: borrar cuando tengamos el fondo final */
+    background-color: gradient(to bottom, #3F4957, #021719); /* Fondo de color gradiente */
 }
 
 header {
