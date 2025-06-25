@@ -3,14 +3,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box; /* Esto mantiene el ancho y alto a pesar de padding y border*/
-    font-family: 'Aldrich', monospace;
     list-style: none; /* Quitar los puntos e decoración de las listas */
     text-decoration: none; /* Esto quita el subrayado de los enlaces */
-    color: wheat ;
+    color: rgb(240, 240, 240) ;
 }
 
-body{
-    background-color: gradient(to bottom, #3F4957, #021719); /* Fondo de color gradiente */
+body {
+    background-color: black;
 }
 
 header {
@@ -20,115 +19,50 @@ header {
     z-index: 100; /* Esto hace que el header se muestre por encima*/
     width: 100%;
     display: flex; /* Esto hará que los elementos se pongan en linea */
-    align-items: center; /* Centra verticalmente */
+    align-items: center; /* Centra verticalmente */|
     justify-content: space-between; /* Que los elementos se separen */
     padding: 15px 3%;
     background-color: transparent;
 }
 
-.logo {
-    font-size: 40px;
-    font-weight: 800; /* este es el grueso de las letras */
-}
-
-
-.navlist {
-    width: inherit;
-    display: inline-flex;
-    justify-content: space-between;
-}
-
-.navlist ul {
-    display: inline-flex; /* Esto sirve para que los elementos de la lista UL se pongan en linea*/
-    flex-wrap: wrap;
-    align-self: center;
-}
-
-
-
-.navlistt{
-    justify-content: start;
-}
-
-.login {
-    font-size: 10px;
-    padding: 30px;
-    color: black;
-}
-
-
-.navlist ul li  {
-    /* margin-left: 60px; es para separar las palabras */
-    margin-inline: 10px;
-    font-size: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent; /* este es un subrayado transparente */
-    transition: all .6s ease; /* esto es para animar todas las caracteristicas del .navlist a */
-}
-
-.navlist a:hover {
-    border-bottom: 1px double white; /* este es un subrayado blanco que aparecerá cuando hacemos estamos encima con el mouse */
-}
-
- #menu-icon{
-    display: none;  /* lo pongo en none para que solo se vea cuando la página esté colapsada de forma horizontal */
-} 
-
-#menu-icon{
-    font-size: 35px;
-    z-index: 101; /* para que este sobre el header */
-    cursor: pointer; /* para que aparezca la manito cuando ponemos el mouse encima */
-}
-
-#menu-toggle{
-    display: none; /* nunca quiero que se vea el checkbox*/
-}
-
-.menu-icon-action{
-    display: none; /* para que no se le pueda hacer click*/
-}
-
 .hero{
     height: 100%;
-    width: 100%;
+    width: 75%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #5e9eab 0%, #49b9cf 25%, #1623ac 75%); /* fondo de color gradiente */
-    position: relative; /* Para que sea relativo al contenedor (nos permite usar top, bottom, left y right) */
-    display: grid; /* Para que el hero se pueda dividir en dos columnas */
-    grid-template-columns: 1fr 1fr; /* las 2 columnas */
-    align-items:center; /* para alinear verticalmente el hero */
-    /* gap: 2rem; haya espacio de 2 rem entre las dos columnas */
+    background: rgba(0, 0, 0, 0);
+    position: relative; 
+    display: grid; 
+    align-items:end; 
+
+/* ----- PROPIEDADES DE FONDO DE IMAGEN ----- */
+    background-image: url('assets/mainimage.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
+
+.hero-text {
+    margin-bottom: 90px;
+}
+
 
 section{
     padding: 0 5%;
 }
 
-.hero-text h5 {
+.hero-text h2 {
+    background-color: transparent;
     font-size: 25px;
     font-weight: 400;
     margin-bottom: 25px;
 }
 
 .hero-text h1 {
+    background-color: transparent;
     font-family: 'Aldrich', monospace;
     font-size: 60px;
     line-height: 1;
     margin: 0 0 30px;
-}
-
-
-.hero-text h4 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 0px;
-    margin-bottom: 30px;
-}
-
-.hero-text p {
-    font-size: 80%;
-    margin-bottom: 40px;
-    line-height: 1.9;
 }
 
 .hero-img img{
@@ -159,28 +93,12 @@ section{
 
 .hero-text a:hover {
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid rgb(235, 128, 128);
     transform: translateX(10px);
     transition: background-color 
 }
 
-.hero-text a.videos{
-    background-color: transparent;
-    border: 1px solid white;
-    margin-left:  20px;
-}
 
-.hero-text a.videos i{
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-.icons {
-    position: absolute;
-    top: 50vh;
-    padding: 0 3%;
-    transform: translateY(-50%);
-}
 
 .icons i {
     display: block;
