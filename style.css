@@ -125,6 +125,28 @@ section {
     transform: translateX(6px);
 }
 
+
+
+
+.portfolio {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #021719ef;
+    position: relative; 
+    display: grid; 
+    align-items:end; 
+    align-content: center;
+    padding: 0 5%;
+}
+.portfolio p {
+    color: #39e2e865;
+    background-color: transparent;
+    font-family: quck-sans, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 30px;
+}
+
 .contact {
     width: 100%;
 
@@ -134,6 +156,8 @@ section {
     background-position: center center; 
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
+
+
 
 
 
