@@ -33,7 +33,6 @@ header {
     position: relative; 
     display: grid; 
     align-items:end; 
-
 /* ----- PROPIEDADES DE FONDO DE IMAGEN ----- */
     background-image: url('assets/mainimage.jpg'); 
     background-size: cover; 
@@ -45,9 +44,16 @@ header {
     margin-bottom: 90px;
 }
 
-
-section{
+section {
     padding: 0 5%;
+}
+
+.hero-text h1 {
+    background-color: transparent;
+    font-family: quck-sans, sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 0 30px;
 }
 
 .hero-text h2 {
@@ -57,83 +63,81 @@ section{
     margin-bottom: 25px;
 }
 
-.hero-text h1 {
-    background-color: transparent;
-    font-family: 'Aldrich', monospace;
-    font-size: 60px;
-    line-height: 1;
-    margin: 0 0 30px;
-}
-
-.hero-img img{
-    width: 250px;
-    margin: 10% 0 0 20%;
-    height: auto;
-    transition-duration: 300ms;
-    /* transition: all 5s linear ; esto hace que la transición sea lineal */
-}
-
-.hero-img img:hover {
-    width: 350px;
-    opacity: 0.8;
-}
-
 .hero-text a {
     display: inline-block;
-    background-color: #1520f1;
+    background-color: #39e2e865;
     border: 1px solid transparent;
     padding: 15px 30px;
     line-height: 1.4;
     font-size: 14px;
     font-weight: 500;
-    border-radius: 30px;
+    border-radius: 40px;
     text-transform: uppercase;
-    transition: all .5s ease;
+    transition: all .9s ease;
 }
 
 .hero-text a:hover {
     background-color: transparent;
-    border: 1px solid rgb(235, 128, 128);
-    transform: translateX(10px);
-    transition: background-color 
-}
-
-
-
-.icons i {
-    display: block;
-    margin: 26px 0;
-    font-size: 24px;
-    transition: all 0.5s ease;
-}
-
-.icons i:hover{
-    color: #4d4d4d;
-    transform: translateY(-5px);
-}
-
-.scroll-down {
-    position: absolute;
-    bottom: 6%;
-    right: 3%;
-}
-
-.scroll-down i {
-    display: block;
-    padding: 12px;
-    font-size: 25px;
-    background-color: #21383d;
-    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.526);
+    transform: translateX(6px);
     transition: all .5s ease;
 }
 
-.scroll-down i:hover{
-    transform: translateY(-5px);
+.aboutme {
+    color: #c1ff72;
+    font-family: quck-sans, sans-serif;
+    height: 100%;
+    width: 75%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    position: relative; 
+    display: grid; 
+    align-items:end;
+    align-content: center;
+/* ----- PROPIEDADES DE FONDO DE IMAGEN ----- */
+    background-image: url('assets/aboutme.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.aboutme p {
+    color: #39e2e865;
+    background-color: transparent;
+    font-family: quck-sans, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 30px;
+}
+
+.aboutme h1 {
+    color: #39e2e865;
+    background-color: transparent;
+    font-family: quck-sans, sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 0 30px;
+}
+
+.aboutme h1:hover {
+    color: #39e2e865;
+    transition: all .5s ease;
+    transform: translateX(6px);
+}
+
+.contact {
+    width: 100%;
+
+    /* ----- PROPIEDADES DE FONDO DE IMAGEN ----- */
+    background-image: url('assets/contact.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 
-/* Aca vamos a hacer mediaqueries para que la web sea responsive */
 
+/* Aca vamos a hacer mediaqueries para que la web sea responsive */
 @media (max-width:992px){
     section {
         padding: 0 3%;
