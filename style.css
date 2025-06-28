@@ -2,42 +2,33 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Esto mantiene el ancho y alto a pesar de padding y border*/
-    list-style: none; /* Quitar los puntos e decoración de las listas */
-    text-decoration: none; /* Esto quita el subrayado de los enlaces */
-    color: rgb(240, 240, 240) ;
+    box-sizing: border-box;
+    /* Esto mantiene el ancho y alto a pesar de padding y border*/
+    list-style: none;
+    /* Quitar los puntos e decoración de las listas */
+    text-decoration: none;
+    /* Esto quita el subrayado de los enlaces */
+    color: rgb(240, 240, 240);
 }
 
 body {
     background-color: black;
 }
 
-header {
-    position: fixed; /* Esto hace que el haader se quede fijo en la parte superior */
-    right: 0;   
-    top: 10px;
-    z-index: 100; /* Esto hace que el header se muestre por encima*/
-    width: 100%;
-    display: flex; /* Esto hará que los elementos se pongan en linea */
-    align-items: center; /* Centra verticalmente */|
-    justify-content: space-between; /* Que los elementos se separen */
-    padding: 15px 3%;
-    background-color: transparent;
-}
-
-.hero{
+.hero {
     height: 100%;
     width: 75%;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0);
-    position: relative; 
-    display: grid; 
-    align-items:end; 
-/* ----- PROPIEDADES DE FONDO DE IMAGEN ----- */
-    background-image: url('assets/mainimage.jpg'); 
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: relative;
+    display: grid;
+    align-items: end;
+    /* ----- PROPIEDADES DE FONDO DE IMAGEN ----- */
+    background-image: url('assets/mainimage.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
 }
 
 .hero-text {
@@ -49,69 +40,61 @@ section {
 }
 
 .hero-text h1 {
+    color: #ebfffcc2;
     background-color: transparent;
     font-family: quck-sans, sans-serif;
-    font-size: 60px;
+    font-size: 85px;
+    letter-spacing: 5px;
     line-height: 1;
     margin: 0 0 30px;
 }
 
 .hero-text h2 {
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 25px;
 }
 
 .hero-text a {
     display: inline-block;
-    background-color: #39e2e865;
+    background-color: #4a9b8e6b;
     border: 1px solid transparent;
     padding: 15px 30px;
     line-height: 1.4;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
     border-radius: 40px;
     text-transform: uppercase;
-    transition: all .9s ease;
+    transition: all .5s ease;
 }
 
 .hero-text a:hover {
     background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.526);
+    border: 1px solid #d4af7a;
     transform: translateX(6px);
     transition: all .5s ease;
 }
 
 .aboutme {
-    color: #c1ff72;
     font-family: quck-sans, sans-serif;
     height: 100%;
     width: 75%;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0);
-    position: relative; 
-    display: grid; 
-    align-items:end;
+    position: relative;
+    display: grid;
+    align-items: end;
     align-content: center;
-/* ----- PROPIEDADES DE FONDO DE IMAGEN ----- */
-    background-image: url('assets/aboutme.png'); 
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-}
-
-.aboutme p {
-    color: #39e2e865;
-    background-color: transparent;
-    font-family: quck-sans, sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 0 0 30px;
+    /* ----- PROPIEDADES DE FONDO DE IMAGEN ----- */
+    background-image: url('assets/aboutme.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
 }
 
 .aboutme h1 {
-    color: #39e2e865;
+    color: #4a9b8e;
     background-color: transparent;
     font-family: quck-sans, sans-serif;
     font-size: 60px;
@@ -120,24 +103,44 @@ section {
 }
 
 .aboutme h1:hover {
-    color: #39e2e865;
-    transition: all .5s ease;
-    transform: translateX(6px);
+    color: #c1f4fff5;
+    transition: all 4s ease;
+    text-shadow: #4a9b8e 0px 0px 20px;
 }
 
+.aboutme p {
+    color: #4a9b8e;
+    font-family: quck-sans, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 30px;
+}
 
+.aboutme a {
+    display: inline-block;
+    background-color: #4a9b8e;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 40px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
 
 
 .portfolio {
     width: 100%;
     min-height: 100vh;
     background-color: #021719ef;
-    position: relative; 
-    display: grid; 
-    align-items:end; 
+    position: relative;
+    display: grid;
+    align-items: end;
     align-content: center;
     padding: 0 5%;
 }
+
 .portfolio p {
     color: #39e2e865;
     background-color: transparent;
@@ -151,100 +154,95 @@ section {
     width: 100%;
 
     /* ----- PROPIEDADES DE FONDO DE IMAGEN ----- */
-    background-image: url('assets/contact.png'); 
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url('assets/contact.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
 }
 
 
-
-
-
-/* Aca vamos a hacer mediaqueries para que la web sea responsive */
-@media (max-width:992px){
+/* Mediaqueries para que sea responsive */
+@media (max-width:992px) {
     section {
         padding: 0 3%;
         transition: .2s;
     }
 
-    .hero-text{
-        padding-top: 0;
+    .hero {
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        display: grid;
+        justify-content: end;
+        align-items: center;
     }
 
-    .hero-img{
-        text-align: center;
-    }
-
-    .hero-img img{
-        width: 80%;
-        margin: 10% 0 0 10%;
-    }
-
-    .hero-text p {
-        font-size: 70%;
-    }
-
-    .icons{
-        display: none;
-    }
-
-    .scroll-down{
-        display: none;
-    }
-}
-
-@media (max-width: 768px){
-
-    .menu-icon-action{
-        display: block;
-    }
-
-    #menu-icon{
-        display: block;
-    }
-
-    .hero-text{
+    .hero-text {
         text-align: center;
         padding-top: 100px;
     }
 
-    .hero-img img {
-        margin: 0;
-        width: 30%;
+    .hero-text h1 {
+        font-size: 20px;
+        letter-spacing: normal;
     }
 
-    .hero-img:hover img {
-        margin: 0;
-        width:45% ;
+    .hero-text h2 {
+
+        font-size: 6px;
+        letter-spacing: .9px;
     }
+
+    .hero-text a {
+
+        display: inline-block;
+        background-color: #4a9b8e6b;
+        border: 1px solid transparent;
+        padding: 15px 30px;
+        line-height: 1.4;
+        font-size: 10px;
+        border-radius: 40px;
+        text-transform: uppercase;
+        transition: all .5s ease;
+    }
+}
+
+@media ((max-width: 414px)) {
 
     .hero {
         height: 100%;
-        gap: 1rem;
-        grid-template-columns: 1fr;
-    }
-
-    .navlist{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 200px;
-        height: 180px;
-        background-color: #021719ef;
-        display: flex;
-        flex-direction: column;
+        background-size: contain;
+        display: grid;
+        justify-content: end;
         align-items: center;
-        padding: 30px 20px;
-        transition: all .5s ease-out;
     }
 
-    .navlist a {
-        display: block;
-        margin: 7px 0;
+    .hero-text {
+        text-align: center;
+        padding-top: 100px;
     }
 
-    #menu-toggle:checked + label.menu-icon-action + ul{
-        right: 0;
+    .hero-text h1 {
+        font-size: 15px;
     }
-}
+
+    .hero-text h2 {
+
+        font-size: 5px;
+        letter-spacing: .4px;
+    }
+
+    .hero-text a {
+
+        display: inline-block;
+        background-color: #4a9b8e6b;
+        border: 1px solid transparent;
+        padding: 7px 15px;
+        line-height: 1.4;
+        font-size: 5px;
+        border-radius: 40px;
+        text-transform: uppercase;
+        transition: all .5s ease;
+    }
+ }
