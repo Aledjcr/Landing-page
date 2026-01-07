@@ -1,21 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
-     <!-- importación de archivo CSS  -->
-    <link rel="stylesheet" href="style.css">
-<body>
-    <section class="#">
+<html lang="es">
 
-        <div class="aboutme">
-            <h1>About Me</h1>
-            <p>Welcome to my personal page! I am a software developer with a passion for technology and innovation. I enjoy staying updated with the latest trends in software development and continuously improving my skills.</p>
-            <p>In my free time, I love reading articles about finance, technology, and innovation. I believe in lifelong learning and strive to enhance my professional skills as a FullStack developer.</p>
-            <p>Feel free to explore my projects and connect with me on social media! </p>
-            
-            <div class="hero-text">
-                <a href="index.html" class="action-button"><i class="ri-play-fill"></i>Home</a>
-                <a href="portfolio.html" class="action-button"><i class="ri-play-fill"></i>Portfolio</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets\favicon.ico" type="image/x-icon">
+    <title>About Me - Aledjcr</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Google Fonts - Fuentes modernas y legibles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Aledjcr</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html" class="active">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            
+        </nav>
+    </header>
+    <!-- ABOUT ME SECTION - Estilo Blog -->
+    <section class="about-section">
+        <div class="about-container">
+            <article class="blog-post">
+                <header class="blog-header">
+                    <h1 class="blog-title">Sobre Mí</h1>
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="ri-calendar-line"></i> Actualizado recientemente</span>
+                        <span class="blog-author"><i class="ri-user-line"></i> Alejandro Contreras</span>
+                    </div>
+                </header>
+
+                <div class="blog-content">
+                    <div class="blog-intro">
+                        <p class="lead">¡Hola! Soy Alejandro Contreras, un desarrollador de software apasionado por la tecnología y la innovación. Mi objetivo es crear soluciones digitales que marquen la diferencia.</p>
+                    </div>
+
+                    <section class="blog-section">
+                        <h2 class="section-title">Mi Historia</h2>
+                        <p>Mi viaje en el desarrollo de software comenzó con una curiosidad insaciable por entender cómo funcionan las cosas detrás de las pantallas. Lo que empezó como un hobby se convirtió rápidamente en mi pasión y profesión.</p>
+                        <p>Disfruto manteniéndome actualizado con las últimas tendencias en desarrollo de software y mejorando continuamente mis habilidades. Cada proyecto es una oportunidad de aprender algo nuevo y de superar desafíos técnicos.</p>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2 class="section-title">Mi Enfoque</h2>
+                        <p>Como desarrollador FullStack, me especializo en crear aplicaciones web completas desde el frontend hasta el backend. Mi filosofía se basa en:</p>
+                        <ul class="blog-list">
+                            <li><strong>Código limpio y mantenible:</strong> Creo que el buen código es aquel que otros desarrolladores pueden entender y modificar fácilmente.</li>
+                            <li><strong>Experiencia de usuario:</strong> Priorizo la usabilidad y la experiencia del usuario en cada decisión de diseño.</li>
+                            <li><strong>Aprendizaje continuo:</strong> La tecnología evoluciona constantemente, y yo evoluciono con ella.</li>
+                            <li><strong>Colaboración:</strong> Creo firmemente en el trabajo en equipo y en compartir conocimientos.</li>
+                        </ul>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2 class="section-title">Intereses y Pasatiempos</h2>
+                        <p>Cuando no estoy programando, me encanta leer artículos sobre finanzas, tecnología e innovación. Estos temas me ayudan a mantener una perspectiva amplia y a entender mejor el contexto en el que trabajo.</p>
+                        <p>También disfruto explorar nuevas tecnologías, contribuir a proyectos de código abierto y participar en comunidades de desarrolladores donde puedo compartir y aprender de otros profesionales.</p>
+                    </section>
+
+                    <section class="blog-section">
+                        <h2 class="section-title">¿Trabajamos juntos?</h2>
+                        <p>Si tienes un proyecto en mente o simplemente quieres conectar, estaré encantado de escucharte. No dudes en explorar mis proyectos y contactarme a través de las redes sociales o el formulario de contacto.</p>
+                    </section>
+                </div>
+
+                <footer class="blog-footer">
+                    <div class="blog-tags">
+                        <span class="tag">Desarrollo Web</span>
+                        <span class="tag">FullStack</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                    <div class="blog-actions">
+                        <a href="portfolio.html" class="blog-link"><i class="ri-folder-open-line"></i> Ver Portfolio</a>
+                        <a href="contact.html" class="blog-link"><i class="ri-mail-line"></i> Contactar</a>
+                    </div>
+                </footer>
+            </article>
         </div>
     </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section">
+        <div class="skills-container">
+            <h2 class="skills-title">Tecnologías & Habilidades</h2>
+            <p class="skills-subtitle">Herramientas y tecnologías que utilizo en mis proyectos</p>
+            
+            <div class="skills-grid">
+                <div class="skill-item" data-skill="HTML">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillhtml.png" alt="HTML">
+                    </div>
+                    <h3>HTML</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="CSS">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillcss.png" alt="CSS">
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="JavaScript">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skilljavascript.png" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="React">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillreact.png" alt="React">
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="Node.js">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillnode.png" alt="Node.js">
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="MySQL">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillmysql.png" alt="MySQL">
+                    </div>
+                    <h3>MySQL</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="Git">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillgit.png" alt="Git">
+                    </div>
+                    <h3>Git</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="Webpack">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillwebpack.png" alt="Webpack">
+                    </div>
+                    <h3>Webpack</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Menú hamburguesa
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    menuToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+                
+                const navLinks = document.querySelectorAll('.nav-menu a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+
+            // Animación de barras de progreso al hacer scroll
+            const observerOptions = {
+                threshold: 0.3,
+                rootMargin: '0px'
+            };
+
+            const skillObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const skillProgress = entry.target.querySelector('.skill-progress');
+                        if (skillProgress) {
+                            const width = skillProgress.style.width;
+                            skillProgress.style.width = '0';
+                            setTimeout(() => {
+                                skillProgress.style.width = width;
+                            }, 100);
+                        }
+                        skillObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.skill-item').forEach(item => {
+                skillObserver.observe(item);
+            });
+        });
+    </script>
 </body>
+</html>

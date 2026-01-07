@@ -1,15 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets\favicon.ico" type="image/x-icon" />
+
+    <title>Contact - Aledjcr</title>
+
+    <!-- importación de archivo CSS  -->
     <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+
+    <!-- https://boxicons.com/ -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- https://remixicon.com/ -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Google Fonts - Fuentes modernas y legibles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="hero-text">
-        <a href="index.html">Home</a>
-        <img class= "contact" src="assets/contact.png" alt="contacto">
-    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Aledjcr</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTACT SECTION  -->
+    <section class="contact-section-page">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Contact Me</h1>
+                <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            </div>
+            
+            <div class="contact-card-page">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bx bx-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:aledjcr@gmail.com">aledjcr@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bx bxl-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/alejandrodcr95/" target="_blank">Conectar en LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bx bxl-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Aledjcr" target="_blank">Ver mi perfil</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bx bx-map"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <span>Córdoba - Argentina</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-actions">
+                    <a href="index.html" class="action-button"><i class="ri-home-line"></i> Volver al inicio</a>
+                    <a href="portfolio.html" class="action-button"><i class="ri-folder-open-line"></i> Ver Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Menú hamburguesa
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    menuToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+                
+                const navLinks = document.querySelectorAll('.nav-menu a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
+
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets\favicon.ico" type="image/x-icon">
 
-    <title>Portfolio Aledjcr</title>
+    <title>Home - Aledjcr | Portfolio</title>
 
     <!-- importación de archivo CSS  -->
     <link rel="stylesheet" href="style.css">
@@ -17,18 +17,28 @@
     <!-- https://remixicon.com/ -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- https://fonts.google.com/ -->
+    <!-- Google Fonts - Fuentes modernas y legibles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        
+        <nav>
+            <a href="index.html" class="logo">Aledjcr</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
     <!-- HERO SECTION  -->
@@ -37,15 +47,244 @@
             <h1>Alejandro Contreras</h1>
             <h2>Software developer & technology enthusiast</h2>
             <a href="aboutme.html" class="action-button">About me</a>
-            <a href="contact.html" class="action-button">Contact</a>
+            <button class="action-button contact-btn">Contact</button>
+        </div>
+        
+        <div class="hero-skills">
+            <!-- Espacio para la card de contacto -->
         </div>
     </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section">
+        <div class="skills-container">
+            <h2 class="skills-title">Tecnologías & Habilidades</h2>
+            <p class="skills-subtitle">Herramientas y tecnologías que utilizo en mis proyectos</p>
+            
+            <div class="skills-grid">
+                <div class="skill-item" data-skill="HTML">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillhtml.png" alt="HTML">
+                    </div>
+                    <h3>HTML</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="CSS">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillcss.png" alt="CSS">
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="JavaScript">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skilljavascript.png" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="React">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillreact.png" alt="React">
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="Node.js">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillnode.png" alt="Node.js">
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="MySQL">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillmysql.png" alt="MySQL">
+                    </div>
+                    <h3>MySQL</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="Git">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillgit.png" alt="Git">
+                    </div>
+                    <h3>Git</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-skill="Webpack">
+                    <div class="skill-icon">
+                        <img src="assets/skills/skillwebpack.png" alt="Webpack">
+                    </div>
+                    <h3>Webpack</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <div class="contact-card" id="contact-modal">
+            <button class="close-btn">&times;</button>
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="bx bx-envelope"></i>
+                    <a href="mailto:aledjcr@gmail.com">aledjcr@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="bx bxl-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/alejandrodcr95/" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <i class="bx bxl-github"></i>
+                    <a href="https://github.com/Aledjcr" target="_blank">GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <i class="bx bx-map"></i>
+                    <span>Córdoba - Argentina</span>
+                </div>
+            </div>
+        </div>
+        
+    <div class="contact-card" id="contact-modal">
+        <button class="close-btn">&times;</button>
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="bx bx-envelope"></i>
+                <a href="mailto:aledjcr@gmail.com">aledjcr@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="bx bxl-linkedin"></i>
+                <a href="https://www.linkedin.com/in/alejandrodcr95/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+                <i class="bx bxl-github"></i>
+                <a href="https://github.com/Aledjcr" target="_blank">GitHub</a>
+            </div>
+            <div class="contact-item">
+                <i class="bx bx-map"></i>
+                <span>Córdoba - Argentina</span>
+            </div>
+        </div>
+    </div>
     <!-- <div class="icons">
         <a href="https://www.instagram.com/aledjcr/"><i class="ri-instagram-line"></i></a>
         <a href="https://es.stackoverflow.com/users/293682/alejandro-contreras"><i
                 class='bx bxl-stack-overflow'></i></a>
         <a href="https://github.com/Aledjcr"><i class="ri-github-fill"></i></a>
     </div> -->
+    
+    <script>
+        // Añadir interactividad suave
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animación de barras de progreso al hacer scroll
+            const observerOptions = {
+                threshold: 0.3,
+                rootMargin: '0px'
+            };
+
+            const skillObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const skillProgress = entry.target.querySelector('.skill-progress');
+                        if (skillProgress) {
+                            const width = skillProgress.style.width;
+                            skillProgress.style.width = '0';
+                            setTimeout(() => {
+                                skillProgress.style.width = width;
+                            }, 100);
+                        }
+                        skillObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.skill-item').forEach(item => {
+                skillObserver.observe(item);
+            });
+            // Menú hamburguesa
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    menuToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+                
+                // Cerrar menú al hacer clic en un enlace
+                const navLinks = document.querySelectorAll('.nav-menu a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+            
+            // Modal de contacto
+            const contactBtn = document.querySelector('.contact-btn');
+            const closeBtn = document.querySelector('.close-btn');
+            const contactCard = document.querySelector('.contact-card');
+            
+            if (contactBtn && contactCard) {
+                contactBtn.addEventListener('click', function() {
+                    contactCard.style.display = 'block';
+                    setTimeout(() => {
+                        contactCard.classList.add('show');
+                    }, 10);
+                });
+            }
+            
+            if (closeBtn && contactCard) {
+                closeBtn.addEventListener('click', function() {
+                    contactCard.classList.remove('show');
+                    setTimeout(() => {
+                        contactCard.style.display = 'none';
+                    }, 500);
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -1,22 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets\favicon.ico" type="image/x-icon">
+    <title>Portfolio - Aledjcr</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Google Fonts - Fuentes modernas y legibles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Aledjcr</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
     <div class="portfolio">
-        <div class="hero-text">
+        <div class="portfolio-header">
             <h1>Portfolio</h1>
-            <p>Some things I've been working on!</p>
+            <p>Algunos proyectos en los que he estado trabajando</p>
+        </div>
+        
+        <div class="portfolio-grid">
+            <!-- Card 1: Bookings App -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="bx bx-calendar-check"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Bookings App</h3>
+                    <p>Aplicación web para gestión de reservas y citas. Sistema completo de administración de reservas con interfaz intuitiva.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://testdigitalhouse.netlify.app/" target="_blank" class="project-btn">
+                            <i class="bx bx-link-external"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-            <a href="https://testdigitalhouse.netlify.app/"> Bookings App </a>
-            <a href="https://appclimageneral.netlify.app"> App Clima general</a>
-            <a href="https://appclimaescalada.netlify.app/">App Clima para Escalada </a>
-            <a href="https://formulario-dh.netlify.app/">Formulario en Vanilla Js + HTML + CSS (bootstrap)</a>
-            <a href="index.html"> Home</a>
+            <!-- Card 2: App Clima General -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="bx bx-cloud"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>App Clima General</h3>
+                    <p>Aplicación de consulta del clima en tiempo real. Obtén información meteorológica detallada de cualquier ciudad del mundo.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://appclimageneral.netlify.app" target="_blank" class="project-btn">
+                            <i class="bx bx-link-external"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: App Clima para Escalada -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="bx bx-mountain"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>App Clima para Escalada</h3>
+                    <p>Aplicación especializada para escaladores. Consulta condiciones climáticas específicas para planificar tus escaladas de forma segura.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://appclimaescalada.netlify.app/" target="_blank" class="project-btn">
+                            <i class="bx bx-link-external"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Formulario Vanilla JS -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="bx bx-edit-alt"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Formulario Interactivo</h3>
+                    <p>Formulario completo con validación en tiempo real. Desarrollado con Vanilla JavaScript, HTML y Bootstrap para una experiencia fluida.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://formulario-dh.netlify.app/" target="_blank" class="project-btn">
+                            <i class="bx bx-link-external"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script>
+        // Menú hamburguesa
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    menuToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+                
+                const navLinks = document.querySelectorAll('.nav-menu a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
