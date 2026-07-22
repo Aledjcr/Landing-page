@@ -1,267 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets\favicon.ico" type="image/x-icon">
+    <meta name="description" content="Portfolio de Alejandro Contreras, desarrollador de software especializado en soluciones web, automatización y experiencias digitales.">
+    <meta name="theme-color" content="#071311">
+    <title>Alejandro Contreras | Desarrollador de software</title>
 
-    <title>Home - Aledjcr | Portfolio</title>
-
-    <!-- importación de archivo CSS  -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- https://boxicons.com/ -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-    <!-- https://remixicon.com/ -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
-
-    <!-- Google Fonts - Fuentes modernas y legibles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Aledjcr</a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="aboutme.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+    <header class="site-header" id="site-header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="#inicio" class="logo" aria-label="Ir al inicio">Aledjcr<span>.</span></a>
+
+            <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
             </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </nav>
     </header>
 
-    <!-- HERO SECTION  -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Alejandro Contreras</h1>
-            <h2>Software developer & technology enthusiast</h2>
-            <a href="aboutme.html" class="action-button">About me</a>
-            <button class="action-button contact-btn">Contact</button>
+    <main>
+        <section class="hero section" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+
+            <div class="container hero-layout">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow"><span class="status-dot"></span> Disponible para nuevos proyectos</p>
+                    <h1 id="hero-title">Hola, soy <span>Alejandro Contreras</span></h1>
+                    <p class="hero-lead">Desarrollador de software enfocado en crear productos web claros, rápidos y mantenibles, desde la interfaz hasta la automatización.</p>
+                    <div class="hero-actions">
+                        <a href="#proyectos" class="button button-primary">Ver proyectos <i class="bx bx-right-arrow-alt"></i></a>
+                        <a href="#contacto" class="button button-secondary">Contactarme</a>
+                    </div>
+                    <ul class="hero-highlights" aria-label="Especialidades">
+                        <li><i class="bx bx-code-alt"></i> Desarrollo web</li>
+                        <li><i class="bx bx-bot"></i> Automatización</li>
+                        <li><i class="bx bx-layout"></i> UX/UI responsive</li>
+                    </ul>
+                </div>
+
+                <aside class="terminal-card reveal" aria-label="Resumen profesional">
+                    <div class="terminal-bar">
+                        <span></span><span></span><span></span>
+                        <small>profile.js</small>
+                    </div>
+                    <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"Alejandro"</span>,
+  role: <span class="code-string">"FullStack Developer"</span>,
+  location: <span class="code-string">"Córdoba, Argentina"</span>,
+  focus: [
+    <span class="code-string">"Clean code"</span>,
+    <span class="code-string">"User experience"</span>,
+    <span class="code-string">"Automation"</span>
+  ]
+};</code></pre>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="sobre-mi" aria-labelledby="about-title">
+            <div class="container about-layout">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Sobre mí</p>
+                    <h2 id="about-title">Soluciones simples para problemas complejos</h2>
+                </div>
+
+                <div class="about-content reveal">
+                    <p class="large-text">Soy desarrollador de software y disfruto transformar ideas en experiencias digitales funcionales. Trabajo con una mirada integral: arquitectura, interfaz, rendimiento y facilidad de mantenimiento.</p>
+                    <p>Mi enfoque combina código limpio, decisiones de diseño centradas en el usuario y aprendizaje continuo. Cada proyecto es una oportunidad para reducir fricción, automatizar tareas y construir una base sólida para evolucionar.</p>
+
+                    <div class="principles-grid">
+                        <article class="principle-card">
+                            <i class="bx bx-check-shield"></i>
+                            <h3>Calidad técnica</h3>
+                            <p>Estructuras semánticas, código legible y componentes fáciles de extender.</p>
+                        </article>
+                        <article class="principle-card">
+                            <i class="bx bx-user-check"></i>
+                            <h3>Experiencia de usuario</h3>
+                            <p>Navegación natural, jerarquía visual clara y diseño responsive.</p>
+                        </article>
+                        <article class="principle-card">
+                            <i class="bx bx-trending-up"></i>
+                            <h3>Mejora continua</h3>
+                            <p>Iteración basada en resultados, rendimiento y necesidades reales.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="habilidades" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-heading centered reveal">
+                    <p class="eyebrow">Stack técnico</p>
+                    <h2 id="skills-title">Herramientas para construir productos completos</h2>
+                    <p>Una base sólida de frontend, backend y automatización aplicada a proyectos reales.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal"><i class="bx bxl-html5"></i><h3>HTML5</h3><p>Semántica, accesibilidad y estructura.</p></article>
+                    <article class="skill-card reveal"><i class="bx bxl-css3"></i><h3>CSS3</h3><p>Responsive, Grid, Flexbox y animaciones.</p></article>
+                    <article class="skill-card reveal"><i class="bx bxl-javascript"></i><h3>JavaScript</h3><p>Interactividad, APIs y lógica de interfaz.</p></article>
+                    <article class="skill-card reveal"><i class="bx bxl-react"></i><h3>React</h3><p>Componentes y aplicaciones escalables.</p></article>
+                    <article class="skill-card reveal"><i class="bx bxl-python"></i><h3>Python</h3><p>Automatización, scraping y procesamiento.</p></article>
+                    <article class="skill-card reveal"><i class="bx bxl-git"></i><h3>Git</h3><p>Versionado y flujos de trabajo colaborativos.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="proyectos" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Portfolio</p>
+                    <h2 id="projects-title">Proyectos seleccionados</h2>
+                    <p>Aplicaciones web y automatizaciones desarrolladas para resolver necesidades concretas.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-visual"><i class="bx bx-calendar-check"></i><span>Web App</span></div>
+                        <div class="project-body">
+                            <div class="project-number">01</div>
+                            <h3>Bookings App</h3>
+                            <p>Aplicación web para gestionar reservas y citas mediante una interfaz directa e intuitiva.</p>
+                            <ul class="tag-list"><li>React</li><li>JavaScript</li><li>CSS</li></ul>
+                            <a href="https://testdigitalhouse.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">Ver demo <i class="bx bx-link-external"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual"><i class="bx bx-bot"></i><span>Automation</span></div>
+                        <div class="project-body">
+                            <div class="project-number">02</div>
+                            <h3>Bot de consulta automática</h3>
+                            <p>Automatización que consulta trámites, completa formularios y notifica cambios de estado.</p>
+                            <ul class="tag-list"><li>Python</li><li>Playwright</li><li>Scraping</li></ul>
+                            <a href="https://github.com/Aledjcr/Consulter-bot" target="_blank" rel="noopener noreferrer" class="project-link">Ver repositorio <i class="bx bx-link-external"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual"><i class="bx bx-cloud"></i><span>API App</span></div>
+                        <div class="project-body">
+                            <div class="project-number">03</div>
+                            <h3>App Clima General</h3>
+                            <p>Consulta meteorológica en tiempo real con información detallada para cualquier ciudad.</p>
+                            <ul class="tag-list"><li>JavaScript</li><li>API</li><li>CSS</li></ul>
+                            <a href="https://appclimageneral.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link">Ver demo <i class="bx bx-link-external"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual"><i class="bx bx-landscape"></i><span>Weather Tool</span></div>
+                        <div class="project-body">
+                            <div class="project-number">04</div>
+                            <h3>Clima para escalada</h3>
+                            <p>Herramienta orientada a escaladores para evaluar condiciones antes de una salida.</p>
+                            <ul class="tag-list"><li>JavaScript</li><li>API</li><li>Responsive</li></ul>
+                            <a href="https://appclimaescalada.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">Ver demo <i class="bx bx-link-external"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual"><i class="bx bx-edit-alt"></i><span>Vanilla JS</span></div>
+                        <div class="project-body">
+                            <div class="project-number">05</div>
+                            <h3>Formulario interactivo</h3>
+                            <p>Formulario con validación en tiempo real y una experiencia fluida en distintos dispositivos.</p>
+                            <ul class="tag-list"><li>JavaScript</li><li>Bootstrap</li><li>HTML</li></ul>
+                            <a href="https://formulario-dh.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">Ver demo <i class="bx bx-link-external"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contacto" aria-labelledby="contact-title">
+            <div class="container contact-layout reveal">
+                <div>
+                    <p class="eyebrow">Contacto</p>
+                    <h2 id="contact-title">¿Construimos algo juntos?</h2>
+                    <p>Estoy disponible para conversar sobre oportunidades, colaboraciones o nuevos proyectos.</p>
+                    <a href="mailto:aledjcr@gmail.com" class="button button-primary">Escribirme por email <i class="bx bx-envelope"></i></a>
+                </div>
+
+                <address class="contact-list">
+                    <a href="mailto:aledjcr@gmail.com"><i class="bx bx-envelope"></i><span><small>Email</small>aledjcr@gmail.com</span></a>
+                    <a href="https://www.linkedin.com/in/alejandrodcr95/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i><span><small>LinkedIn</small>alejandrodcr95</span></a>
+                    <a href="https://github.com/Aledjcr" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i><span><small>GitHub</small>Aledjcr</span></a>
+                    <div><i class="bx bx-map"></i><span><small>Ubicación</small>Córdoba, Argentina</span></div>
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="current-year"></span> Alejandro Contreras.</p>
+            <a href="#inicio">Volver arriba <i class="bx bx-up-arrow-alt"></i></a>
         </div>
-        
-        <div class="hero-skills">
-            <!-- Espacio para la card de contacto -->
-        </div>
-    </section>
+    </footer>
 
-    <!-- SKILLS SECTION -->
-    <section class="skills-section">
-        <div class="skills-container">
-            <h2 class="skills-title">Tecnologías & Habilidades</h2>
-            <p class="skills-subtitle">Herramientas y tecnologías que utilizo en mis proyectos</p>
-            
-            <div class="skills-grid">
-                <div class="skill-item" data-skill="HTML">
-                    <div class="skill-icon">
-                        <img src="assets/skills/skillhtml.png" alt="HTML">
-                    </div>
-                    <h3>HTML</h3>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="CSS">
-                    <div class="skill-icon">
-                        <img src="assets/skills/skillcss.png" alt="CSS">
-                    </div>
-                    <h3>CSS</h3>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="JavaScript">
-                    <div class="skill-icon">
-                        <img src="assets/skills/skilljavascript.png" alt="JavaScript">
-                    </div>
-                    <h3>JavaScript</h3>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="React">
-                    <div class="skill-icon">
-                        <img src="assets/skills/skillreact.png" alt="React">
-                    </div>
-                    <h3>React</h3>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="Node.js">
-                    <div class="skill-icon">
-                        <img src="assets/skills/skillnode.png" alt="Node.js">
-                    </div>
-                    <h3>Node.js</h3>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="MySQL">
-                    <div class="skill-icon">
-                        <img src="assets/skills/skillmysql.png" alt="MySQL">
-                    </div>
-                    <h3>MySQL</h3>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 65%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="Git">
-                    <div class="skill-icon">
-                        <img src="assets/skills/skillgit.png" alt="Git">
-                    </div>
-                    <h3>Git</h3>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="Webpack">
-                    <div class="skill-icon">
-                        <img src="assets/skills/skillwebpack.png" alt="Webpack">
-                    </div>
-                    <h3>Webpack</h3>
-                    <div class="skill-level">
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-        
-    <div class="contact-card" id="contact-modal">
-        <button class="close-btn">&times;</button>
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="bx bx-envelope"></i>
-                <a href="mailto:aledjcr@gmail.com">aledjcr@gmail.com</a>
-            </div>
-            <div class="contact-item">
-                <i class="bx bxl-linkedin"></i>
-                <a href="https://www.linkedin.com/in/alejandrodcr95/" target="_blank">LinkedIn</a>
-            </div>
-            <div class="contact-item">
-                <i class="bx bxl-github"></i>
-                <a href="https://github.com/Aledjcr" target="_blank">GitHub</a>
-            </div>
-            <div class="contact-item">
-                <i class="bx bx-map"></i>
-                <span>Córdoba - Argentina</span>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="icons">
-        <a href="https://www.instagram.com/aledjcr/"><i class="ri-instagram-line"></i></a>
-        <a href="https://es.stackoverflow.com/users/293682/alejandro-contreras"><i
-                class='bx bxl-stack-overflow'></i></a>
-        <a href="https://github.com/Aledjcr"><i class="ri-github-fill"></i></a>
-    </div> -->
-    
-    <script>
-        // Añadir interactividad suave
-        document.addEventListener('DOMContentLoaded', function() {
-            // Animación de barras de progreso al hacer scroll
-            const observerOptions = {
-                threshold: 0.3,
-                rootMargin: '0px'
-            };
-
-            const skillObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const skillProgress = entry.target.querySelector('.skill-progress');
-                        if (skillProgress) {
-                            const width = skillProgress.style.width;
-                            skillProgress.style.width = '0';
-                            setTimeout(() => {
-                                skillProgress.style.width = width;
-                            }, 100);
-                        }
-                        skillObserver.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('.skill-item').forEach(item => {
-                skillObserver.observe(item);
-            });
-            // Menú hamburguesa
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            if (menuToggle && navMenu) {
-                menuToggle.addEventListener('click', function() {
-                    menuToggle.classList.toggle('active');
-                    navMenu.classList.toggle('active');
-                });
-                
-                // Cerrar menú al hacer clic en un enlace
-                const navLinks = document.querySelectorAll('.nav-menu a');
-                navLinks.forEach(link => {
-                    link.addEventListener('click', function() {
-                        menuToggle.classList.remove('active');
-                        navMenu.classList.remove('active');
-                    });
-                });
-            }
-            
-            // Modal de contacto
-            const contactBtn = document.querySelector('.contact-btn');
-            const closeBtn = document.querySelector('.close-btn');
-            const contactCard = document.querySelector('.contact-card');
-            
-            if (contactBtn && contactCard) {
-                contactBtn.addEventListener('click', function() {
-                    contactCard.style.display = 'block';
-                    setTimeout(() => {
-                        contactCard.classList.add('show');
-                    }, 10);
-                });
-            }
-            
-            if (closeBtn && contactCard) {
-                closeBtn.addEventListener('click', function() {
-                    contactCard.classList.remove('show');
-                    setTimeout(() => {
-                        contactCard.style.display = 'none';
-                    }, 500);
-                });
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
