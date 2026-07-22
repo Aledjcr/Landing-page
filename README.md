@@ -1,7 +1,21 @@
-# PROYECTO FINAL: Landing Page de Maquetación Web
+# Portfolio personal — Landing page de una sola página
 
-Este repositorio alberga una landing page personal desarrollada como proyecto final del curso de Maquetación Web impartido por Sergie Code en Digital House. El sitio web está construido utilizando tecnologías estándar de front-end: HTML5 para la estructura semántica, CSS3 para el diseño y estilos, incluyendo técnicas de diseño responsivo mediante media queries para asegurar compatibilidad en dispositivos móviles y de escritorio.
+Portfolio de Alejandro Contreras desarrollado con HTML5, CSS3 y JavaScript.
 
-El proyecto demuestra mis habilidades en desarrollo web front-end, con énfasis en la creación de interfaces limpias y accesibles, optimización de rendimiento y buenas prácticas de maquetación. Además, se ha implementado un sistema de hosting y despliegue en la nube, administrando manualmente una instancia EC2 de AWS, configurando un servidor Apache con certificados SSL generados vía Certbot para asegurar conexiones HTTPS seguras, y estableciendo un flujo básico de integración y despliegue continuo utilizando Git, complementado con Elastic IPs para estabilidad en el direccionamiento.
+## Estructura
 
-Visita el sitio en producción: https://aledjcr.com/
+- `index.html`: contenido completo del sitio en una sola página.
+- `style.css`: sistema visual, layout responsive y animaciones.
+- `script.js`: menú móvil, navegación activa por sección y apariciones al hacer scroll.
+
+Las páginas anteriores (`aboutme.html`, `portfolio.html` y `contact.html`) se conservan únicamente como referencia. La entrada principal del proyecto es `index.html`.
+
+## Características
+
+- Navegación mediante anclas: Inicio, Sobre mí, Habilidades, Proyectos y Contacto.
+- Menú fijo con indicador de sección activa.
+- Diseño responsive para escritorio, tablet y móvil.
+- HTML semántico y mejoras básicas de accesibilidad.
+- Compatibilidad con `prefers-reduced-motion`.
+
+Sitio en producción: https://aledjcr.com/
