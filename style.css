@@ -41,13 +41,13 @@ p {
 }
 
 /* HEADER Y NAVEGACIÓN */
-header {
+body > header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(10px);
+    /*backdrop-filter: blur(10px);*/
     border-bottom: 1px solid rgba(212, 175, 122, 0.2);
     z-index: 1000;
     padding: 0 5%;
