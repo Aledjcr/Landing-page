@@ -135,7 +135,7 @@ address { font-style: normal; }
 .skill-card:hover { transform: translateY(-7px); border-color: rgba(215,178,117,.35); background: var(--surface-2); }
 
 .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-.project-card { min-height: 390px; display: grid; grid-template-columns: .8fr 1.2fr; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: transform .25s ease, border-color .25s ease; }
+.project-card { min-height: 420px; display: grid; grid-template-columns: .72fr 1.28fr; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: transform .25s ease, border-color .25s ease; }
 .project-card:hover { transform: translateY(-7px); border-color: rgba(215,178,117,.4); }
 .project-visual { min-height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; background: linear-gradient(145deg, rgba(87,183,166,.16), rgba(215,178,117,.08)); }
 .project-visual i { font-size: 4.5rem; color: var(--accent); }
@@ -144,6 +144,7 @@ address { font-style: normal; }
 .project-number { color: var(--primary); font: 700 .8rem 'Poppins', sans-serif; letter-spacing: .15em; }
 .project-body h3 { font: 700 1.35rem 'Poppins', sans-serif; margin: 12px 0; }
 .project-body p { color: var(--muted); font-size: .94rem; }
+.project-body .project-role { color: var(--primary-light); font-size: .76rem; font-weight: 700; letter-spacing: .04em; line-height: 1.4; margin-bottom: 12px; text-transform: uppercase; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 24px; }
 .tag-list li { padding: 5px 10px; border-radius: 999px; background: rgba(87,183,166,.1); color: #8fd7ca; font-size: .72rem; }
 .project-link { margin-top: auto; display: inline-flex; align-items: center; gap: 8px; color: var(--primary-light); font-weight: 700; font-size: .9rem; }
@@ -190,6 +191,7 @@ address { font-style: normal; }
     .terminal-card pre { padding: 24px; }
     .principles-grid, .skills-grid { grid-template-columns: 1fr; }
     .project-card { grid-template-columns: 1fr; }
+    .project-card { min-height: auto; }
     .project-visual { min-height: 190px; }
     .contact-layout { padding: 28px 20px; }
     .footer-content { flex-direction: column; justify-content: center; gap: 8px; text-align: center; }
