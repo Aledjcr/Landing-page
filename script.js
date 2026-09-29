@@ -7,6 +7,7 @@ const sections = [...document.querySelectorAll('main section[id]')];
 const closeMenu = () => {
     navMenu.classList.remove('open');
     menuToggle.classList.remove('active');
+    header.classList.remove('menu-active');
     menuToggle.setAttribute('aria-expanded', 'false');
     menuToggle.setAttribute('aria-label', 'Abrir menú');
     document.body.classList.remove('menu-open');
@@ -15,6 +16,7 @@ const closeMenu = () => {
 menuToggle.addEventListener('click', () => {
     const isOpen = navMenu.classList.toggle('open');
     menuToggle.classList.toggle('active', isOpen);
+    header.classList.toggle('menu-active', isOpen);
     menuToggle.setAttribute('aria-expanded', String(isOpen));
     menuToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
     document.body.classList.toggle('menu-open', isOpen);
@@ -24,6 +26,10 @@ navLinks.forEach(link => link.addEventListener('click', closeMenu));
 
 document.addEventListener('keydown', event => {
     if (event.key === 'Escape') closeMenu();
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 760) closeMenu();
 });
 
 window.addEventListener('scroll', () => {
